@@ -1,0 +1,29 @@
+{
+  "private": true,
+  "name": "@my/ui",
+  "version": "0.0.1",
+  "types": "./types/index.d.ts",
+  "main": "dist/cjs",
+  "module": "dist/esm",
+  "module:jsx": "dist/jsx",
+  "files": [
+    "types",
+    "src",
+    "dist"
+  ],
+  "sideEffects": [
+    "*.css"
+  ],
+  "dependencies": {
+    "@tamagui/core": "^1.132.15",
+    "tamagui": "^1.132.15"
+  },
+  "scripts": {
+    "build": "tamagui-build --skip-types",
+    "postinstall": "tamagui-build --skip-types",
+    "watch": "tamagui-build --skip-types --watch"
+  },
+  "devDependencies": {
+    "@tamagui/build": "^1.132.15"
+  }
+}
