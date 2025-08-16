@@ -15,8 +15,8 @@
     "*.css"
   ],
   "dependencies": {
-    "@tamagui/core": "^1.132.15",
-    "tamagui": "^1.132.15"
+    "@tamagui/core": "^1.132.20",
+    "tamagui": "^1.132.20"
   },
   "scripts": {
     "build": "tamagui-build --skip-types",
@@ -24,6 +24,6 @@
     "watch": "tamagui-build --skip-types --watch"
   },
   "devDependencies": {
-    "@tamagui/build": "^1.132.15"
+    "@tamagui/build": "^1.132.20"
   }
 }
