@@ -11,3 +11,12 @@ this part (see below) has to be included in package.json. It forces yarn/npm to 
     "metro-resolver": "^0.82.0"
   },
 ```
+
+
+Also this one could also help, but I haven't checked it yet. https://docs.expo.dev/versions/v53.0.0/config/metro/#es-module-resolution
+
+
+```
+  config.resolver.unstable_enablePackageExports = false;
+```
+
