@@ -38,6 +38,8 @@ node_modules
 
 .env
 # local env files
+
+services/config.js
 .env.local
 .env.development.local
 .env.test.localp
