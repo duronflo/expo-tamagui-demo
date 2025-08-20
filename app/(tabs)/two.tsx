@@ -1,11 +1,10 @@
-import { Button, H3, H1, H2, H4, Text, ScrollView, Theme, View, Paragraph, useTheme } from 'tamagui'
-import { SignInScreen } from '@/components/ui/forms/layouts'
+import { Button, H3, H1, H2, H4, Text, ScrollView, Theme, View, Paragraph, useTheme } from '@my/ui';
 import { SafeAreaView, Appearance } from 'react-native'
 import { useColorScheme } from 'react-native'
-import { ButtonsWithLeftIcons, ButtonsWithLoaders, RoundedButtons } from '@/components/ui/elements/buttons';
-import { ChipsWithIcon } from '@/components/ui/elements/chips';
+//import { ButtonsWithLeftIcons, ButtonsWithLoaders, RoundedButtons } from '@my/ui';
+import { Chips } from '@my/ui';
 
-
+const ChipsWithIcon = Chips.ChipsWithIcon;
 
 export default function TabTwoScreen() {
   const colorScheme = useColorScheme();
@@ -20,9 +19,6 @@ export default function TabTwoScreen() {
           </Theme>
 
           <Theme name={colorScheme === 'dark' ? 'dark' : 'light'}>
-            <RoundedButtons />
-            <ButtonsWithLeftIcons />
-            <ButtonsWithLoaders />
             <ChipsWithIcon />
           </Theme>
         </View>

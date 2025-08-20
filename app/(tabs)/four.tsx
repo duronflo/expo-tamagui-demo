@@ -1,10 +1,9 @@
-import { Button, H3, H1, H2, H4, Text, Separator, ScrollView, Theme, View, Paragraph, YStack, useTheme } from 'tamagui'
-import { SignInScreen } from '@/components/ui/forms/layouts'
+import { Button, H3, H1, H2, H4, Text, Separator, ScrollView, Theme, View, Paragraph, YStack, useTheme } from '@my/ui'
 import { SafeAreaView, Appearance } from 'react-native'
 import { useColorScheme } from 'react-native'
-import { useAuth } from '@/features/auth/useAuth'
-import { AnimatedNumbers } from '@/components/ui/animation/microinteractions'
-import { Meeting, StatusTracker } from '@/components/ui/user/preferences'
+import { useAuth } from '@src/features/auth/useAuth'
+import { AnimatedNumbers } from '@my/ui'
+import { Meeting, StatusTracker } from '@my/ui'
 
 
 export default function TabFourScreen() {

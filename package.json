@@ -11,6 +11,7 @@
     "upgrade:tamagui": "yarn up '*tamagui*'@latest '@tamagui/*'@latest",
     "upgrade:tamagui:canary": "yarn up '*tamagui*'@canary '@tamagui/*'@canary",
     "check:tamagui": "tamagui check",
+    "clean:watchman": "watchman watch-del-all && watchman shutdown-server",
     "start": "expo start -c",
     "android": "expo run:android",
     "ios": "expo run:ios",
@@ -26,10 +27,9 @@
     "metro-resolver": "^0.82.0"
   },
   "dependencies": {
-    "@my/ui": "0.0.1",
+    "@my/ui": "*",
     "@react-navigation/native": "^7.1.6",
     "@tamagui/config": "^1.132.20",
-    "@tamagui/demos": "^1.132.20",
     "@tamagui/font-silkscreen": "^1.132.20",
     "@tamagui/lucide-icons": "^1.132.20",
     "@tamagui/toast": "^1.132.20",
@@ -52,8 +52,7 @@
     "react-native-safe-area-context": "5.4.0",
     "react-native-screens": "~4.11.1",
     "react-native-svg": "15.11.2",
-    "react-native-web": "^0.20.0",
-    "tamagui": "^1.132.20"
+    "react-native-web": "^0.20.0"
   },
   "devDependencies": {
     "@babel/core": "^7.24.6",

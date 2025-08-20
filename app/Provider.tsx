@@ -1,10 +1,10 @@
 import { useColorScheme, SafeAreaView } from 'react-native'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
-import { TamaguiProvider, type TamaguiProviderProps } from 'tamagui'
+import { TamaguiProvider, type TamaguiProviderProps } from '@my/ui'
 import { ToastProvider, ToastViewport } from '@tamagui/toast'
 import { CurrentToast } from './CurrentToast'
-import { config } from '../tamagui.config'
-import { AuthProvider } from '@/features/auth/useAuth'
+import { config } from '@my/ui'
+import { AuthProvider } from '@src/features/auth/useAuth'
 
 
 

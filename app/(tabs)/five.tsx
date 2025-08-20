@@ -1,10 +1,9 @@
-import { Button, H3, H1, H2, H4, Separator, ScrollView, Theme, Paragraph, YStack } from 'tamagui'
-import { SignInScreen } from '@/components/ui/forms/layouts'
+import { Button, H3, H1, H2, H4, Separator, ScrollView, Theme, Paragraph, YStack } from '@my/ui'
 import { SafeAreaView, Appearance } from 'react-native'
 import { useColorScheme } from 'react-native'
-import { useAuth } from '@/features/auth/useAuth'
+import { useAuth } from '@src/features/auth/useAuth'
 import { View, Text } from 'react-native'
-import { LocationNotification } from '@/components/ui/user/preferences'
+import { LocationNotification } from '@my/ui'
 
 
 export default function TabFiveScreen() {

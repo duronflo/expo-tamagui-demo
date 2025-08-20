@@ -1,4 +1,4 @@
-import { Button, H3, H1, H2, H4, H5, YStack, Separator, ScrollView, Theme, View, Paragraph } from 'tamagui'
+import { Button, H3, H1, H2, H4, H5, YStack, Separator, ScrollView, Theme, View, Paragraph } from '@my/ui'
 import { Appearance } from 'react-native'
 import { useColorScheme } from 'react-native'
 import { Circle } from '@my/ui';

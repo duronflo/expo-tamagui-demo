@@ -1,5 +1,5 @@
 import { Link, Tabs } from 'expo-router'
-import { Button, useTheme } from 'tamagui'
+import { Button, useTheme } from '@my/ui'
 import { Atom, AudioWaveform, LetterText, Command, Clapperboard, Wrench} from '@tamagui/lucide-icons'
 import { Platform } from 'react-native'
 

@@ -1,7 +1,7 @@
 import { ExternalLink } from '@tamagui/lucide-icons'
-import { Anchor, H2, Paragraph, XStack, YStack } from 'tamagui'
-import { ToastControl } from 'app/CurrentToast'
-import { Circle } from '@my/ui'
+import { Anchor, H2, Paragraph, XStack, YStack } from '@my/ui'
+import { ToastControl } from '../CurrentToast'
+import { Circle } from '@my/ui/'
 
 
 export default function TabOneScreen() {
