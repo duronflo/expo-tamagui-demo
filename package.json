@@ -62,6 +62,8 @@
     "@tamagui/cli": "^1.132.20",
     "@tamagui/metro-plugin": "^1.132.20",
     "@types/react": "~19.0.10",
+    "jest": "^30.0.5",
+    "jest-expo": "53.0.9",
     "typescript": "~5.8.3"
   },
   "expo": {
