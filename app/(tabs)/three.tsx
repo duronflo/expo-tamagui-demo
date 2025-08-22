@@ -1,7 +1,6 @@
 import { Button, H3, H1, H2, H4, H5, YStack, Separator, ScrollView, Theme, View, Paragraph } from '@my/ui'
 import { Appearance } from 'react-native'
 import { useColorScheme } from 'react-native'
-import { Circle } from '@my/ui';
 
 
 
@@ -10,7 +9,6 @@ export default function TabThreeScreen() {
   return (
         <ScrollView>
         <YStack flex={1} jc="center" ai="center" gap="$4" bg="$background">
-          <Circle size="$large" />
           <H1 textTransform='uppercase'>Fonts</H1>
           <Theme name="brown">
             <Button onPress={() => Appearance.setColorScheme(colorScheme === 'dark' ? 'light' : 'dark')}> Toggle Darkmode</Button>

@@ -48,3 +48,5 @@ src/services/config.js
 .expo
 ios
 android
+
+bento

@@ -16,7 +16,8 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.duronflo.exporouterexample"
     },
     "android": {
       "adaptiveIcon": {
@@ -47,6 +48,12 @@
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "24f2a332-5618-47f6-b567-17535614dbc1"
+      }
     }
   }
 }
