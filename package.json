@@ -19,7 +19,13 @@
     "test": "jest --watchAll"
   },
   "jest": {
-    "preset": "jest-expo"
+    "preset": "jest-expo",
+    "setupFilesAfterEnv": [
+      "@testing-library/jest-native/extend-expect"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!((jest-)?react-native|@react-native|expo(nent)?|@expo(nent)?|react-navigation|@react-navigation|@unimodules|unimodules|sentry-expo|native-base|react-native-svg|openai))"
+    ]
   },
   "resolutions": {
     "metro": "^0.82.0",
@@ -47,6 +53,7 @@
     "expo-status-bar": "~2.2.3",
     "expo-system-ui": "~5.0.10",
     "expo-web-browser": "~14.2.0",
+    "openai": "^5.15.0",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "react-native": "0.79.5",
@@ -61,6 +68,9 @@
     "@tamagui/babel-plugin": "^1.132.20",
     "@tamagui/cli": "^1.132.20",
     "@tamagui/metro-plugin": "^1.132.20",
+    "@testing-library/jest-native": "^5.4.3",
+    "@testing-library/react-hooks": "^8.0.1",
+    "@types/jest": "^30.0.0",
     "@types/react": "~19.0.10",
     "jest": "^30.0.5",
     "jest-expo": "53.0.9",

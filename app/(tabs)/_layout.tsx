@@ -1,6 +1,6 @@
 import { Link, Tabs } from 'expo-router'
 import { Button, useTheme } from '@my/ui'
-import { Atom, AudioWaveform, LetterText, Command, Clapperboard, Wrench} from '@tamagui/lucide-icons'
+import { Atom, AudioWaveform, LetterText, Command, Clapperboard, Wrench, MessageCircle} from '@tamagui/lucide-icons'
 import { Platform } from 'react-native'
 
 export default function TabLayout() {
@@ -68,6 +68,13 @@ export default function TabLayout() {
         options={{
           title: 'Settings',
           tabBarIcon: ({ color }) => <Wrench color={color as any} />,
+        }}
+      />
+      <Tabs.Screen
+        name="chat"
+        options={{
+          title: 'AI Chat',
+          tabBarIcon: ({ color }) => <MessageCircle color={color as any} />,
         }}
       />
     </Tabs>
