@@ -71,7 +71,7 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="chat"
+        name="chat-demo"
         options={{
           title: 'AI Chat',
           tabBarIcon: ({ color }) => <MessageCircle color={color as any} />,

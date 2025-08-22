@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { YStack, XStack, Text, Button, H3, Input } from '@my/ui'
 import { Key } from '@tamagui/lucide-icons'
-import { ChatPage } from '../../src/features/openai'
+import { ChatPage } from '@src/features/openai'
 
 export default function ChatTabScreen() {
   const [apiKey, setApiKey] = useState('')
