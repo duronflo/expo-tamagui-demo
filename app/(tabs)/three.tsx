@@ -1,13 +1,13 @@
-import { Button, H3, H1, H2, H4, H5, YStack, Separator, ScrollView, Theme, View, Paragraph } from '@my/ui'
+import { Button, H1, H2, H3, H4, H5, YStack, Separator, ScrollView, Theme, Paragraph } from '@my/ui'
 import { Appearance } from 'react-native'
 import { useColorScheme } from 'react-native'
-
-
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 export default function TabThreeScreen() {
   const colorScheme = useColorScheme();
   return (
-        <ScrollView>
+    <SafeAreaView style={{ flex: 1 }} edges={['bottom', 'left', 'right']}>
+      <ScrollView style={{ flex: 1 }}>
         <YStack flex={1} jc="center" ai="center" gap="$4" bg="$background">
           <H1 textTransform='uppercase'>Fonts</H1>
           <Theme name="brown">
@@ -78,6 +78,7 @@ export default function TabThreeScreen() {
           <H5>Heading</H5>
 
         </YStack>
-        </ScrollView>
+      </ScrollView>
+    </SafeAreaView>
   )
 }

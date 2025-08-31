@@ -19,26 +19,32 @@ A modern cross-platform mobile application showcasing the powerful combination o
 ### Onboarding Experience
 Beautiful step-by-step introduction to the app features.
 
-![Onboarding](screenshots/onboarding-screen.png)
+![Onboarding](https://github.com/user-attachments/assets/bf8526a9-a2e0-4899-baf3-9bfae73be7b7)
 
 ### Authentication Screens
 
 **Sign In**
-![Sign In](screenshots/signin-screen.png)
+![Sign In](https://github.com/user-attachments/assets/0f761b29-cfd8-4bd2-8fea-f912f9dd0073)
 
 **Sign Up**  
-![Sign Up](screenshots/signup-screen.png)
+![Sign Up](https://github.com/user-attachments/assets/56b2e911-28a9-4ebb-9216-722a5166f652)
 
 ### Main Application
 
 **Home Screen with Toast Demo**
-![Main App](screenshots/main-app-screen.png)
+![Main App](https://github.com/user-attachments/assets/94c45ac6-8b5a-4aae-8ec1-f50f28b278e9)
 
 **Button Component Showcase**
-![Buttons Demo](screenshots/buttons-screen.png)
+![Buttons Demo](https://github.com/user-attachments/assets/6261e76b-50d0-41b6-84f8-dbe9a05e6254)
 
 **Typography & Fonts**
 ![Fonts Demo](screenshots/fonts-screen.png)
+
+**Demo Components**
+![Demo Screen](screenshots/demo-screen.png)
+
+**Settings Screen**
+![Settings Screen](screenshots/settings-screen.png)
 
 **Modal Example**
 ![Modal](screenshots/modal-screen.png)

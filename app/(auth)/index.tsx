@@ -1,5 +1,4 @@
 import { OnboardingScreen } from '@src/features/auth/onboarding'
-import { Stack } from 'expo-router'
 import { SafeAreaView } from 'react-native-safe-area-context'
 
 export default function Screen() {

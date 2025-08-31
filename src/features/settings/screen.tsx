@@ -1,9 +1,8 @@
 import { YStack, Settings } from "@my/ui";
-import { Cog, Lock, Mail, Moon, LogOut, Info, Book } from "@tamagui/lucide-icons";
+import { Cog, Lock, Moon, LogOut, Info, Book } from "@tamagui/lucide-icons";
 import { useAuth } from "@src/features/auth/useAuth";
 import { Appearance } from 'react-native'
 import { useColorScheme } from 'react-native'
-import { color } from "@my/ui/src/themes/token-colors";
 
 export function SettingsScreen() {
     const { signOut } = useAuth();
