@@ -21,7 +21,7 @@ const SizableText = styled(Text, {
 
 const data = [
   {
-    title: 'Meeting with Jack smith',
+    title: 'Meeting with Jack smith...',
     date: '8:00 - 8:45 AM (UTC)',
     type: 'in-person',
     label: 'On Google Meet',
@@ -134,6 +134,7 @@ function MeetingItem({ item }: { item: (typeof data)[0] }) {
 
 const users = [1, 2, 3]
 export function Users() {
+
   return (
     <View
       flexDirection="row"
@@ -147,7 +148,7 @@ export function Users() {
     >
       {users.map((item, index) => (
         <View zIndex={index} marginLeft={index !== 0 ? '$-2' : undefined} key={item}>
-          <User size="$2" imageUrl={`/avatars/300 (1).jpeg`} />
+          <User size="$2" imageUrl={require('@/assets/images/profile.png')} />
         </View>
       ))}
       <SizableText size="$2" fontWeight="200" marginHorizontal="$1" marginRight="$2.5">

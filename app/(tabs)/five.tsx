@@ -1,20 +1,18 @@
 import { Button, H3, H1, H2, H4, Separator, ScrollView, Theme, Paragraph, YStack } from '@my/ui'
-import { SafeAreaView, Appearance } from 'react-native'
+import { Appearance } from 'react-native'
+import { SafeAreaView } from 'react-native-safe-area-context'
 import { useColorScheme } from 'react-native'
 import { useAuth } from '@src/features/auth/useAuth'
+import { SettingsScreen } from '@src/features/settings/screen'
 import { View, Text } from 'react-native'
-import { LocationNotification } from '@my/ui'
 
 
 export default function TabFiveScreen() {
   const { signOut } = useAuth();
   return (
-    <SafeAreaView style={{ flex: 1 }}>
+    <SafeAreaView style={{ flex: 1 }} edges={['bottom', 'left', 'right']}>
       <ScrollView>
-        <YStack flex={1} jc="center" ai="center" gap="$4" bg="$background">
-          <Button m={'$2'} onPress={signOut}>Logout</Button>
-          <LocationNotification />
-        </YStack>
+        <SettingsScreen />
       </ScrollView>
     </SafeAreaView>
   )
