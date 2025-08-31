@@ -1,7 +1,6 @@
-import { Button, H3, H1, H2, H4, Text, Separator, ScrollView, Theme, View, Paragraph, YStack, useTheme } from '@my/ui'
+import { Button, ScrollView, Theme, YStack, useTheme } from '@my/ui'
 import { Appearance } from 'react-native'
 import { useColorScheme } from 'react-native'
-//import { AnimatedNumbers, StatusTracker } from '@my/ui'
 import { Meeting } from '@my/ui'
 import { SafeAreaView } from 'react-native-safe-area-context'
 
