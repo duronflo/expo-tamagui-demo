@@ -14,9 +14,9 @@
     "dist"
   ],
   "dependencies": {
-    "@tamagui/core": "^1.132.20",
-    "@tamagui/lucide-icons": "^1.132.20",
-    "tamagui": "^1.132.20"
+    "@tamagui/core": "^1.132.23",
+    "@tamagui/lucide-icons": "^1.132.23",
+    "tamagui": "^1.132.23"
   },
   "scripts": {
     "build": "tamagui-build --skip-types",
@@ -29,6 +29,6 @@
     "check-circular-deps": "../../scripts/check-circular-deps.sh ./src/index.tsx"
   },
   "devDependencies": {
-    "@tamagui/build": "^1.132.20"
+    "@tamagui/build": "^1.132.23"
   }
 }

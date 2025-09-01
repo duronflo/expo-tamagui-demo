@@ -2,6 +2,8 @@
 
 A modern cross-platform mobile application showcasing the powerful combination of **Expo** and **Tamagui** for building beautiful, performant apps that run on iOS, Android, and Web.
 
+This starter-kit has been inspired by tamagui-expo-router-starterkit. 
+
 ## 🚀 Features
 
 - 🎨 **Modern UI Components** - Built with Tamagui's comprehensive design system
@@ -83,15 +85,9 @@ yarn install
 ```bash
 # Start with cache clearing
 yarn start
-
-# Or for specific platforms
-yarn web      # Web development
-yarn ios      # iOS development  
-yarn android  # Android development
 ```
 
 ### 4. Open the app
-- **Web**: Open http://localhost:8081 in your browser
 - **Mobile**: Scan QR code with Expo Go app or use simulator
 
 ## 📁 Project Structure
@@ -137,20 +133,12 @@ The app includes specific Metro configuration for proper monorepo support:
 }
 ```
 
-### New Architecture Support
-Enabled for both iOS and Android using Expo's new architecture:
-
-```json
-"newArchEnabled": true
-```
-
 ## 🧪 Available Scripts
 
 - `yarn start` - Start Expo development server
 - `yarn web` - Start web development server
 - `yarn ios` - Run on iOS simulator
 - `yarn android` - Run on Android emulator
-- `yarn test` - Run Jest tests
 - `yarn upgrade:tamagui` - Update all Tamagui packages
 - `yarn check:tamagui` - Check Tamagui configuration
 
