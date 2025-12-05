@@ -8,7 +8,7 @@ export function SettingsScreen() {
     const { signOut } = useAuth();
     const colorScheme = useColorScheme();
     return (
-        <YStack f={1}>
+        <YStack f={1} bg="$background">
             <Settings>
                 <Settings.Items>
 
@@ -21,7 +21,7 @@ export function SettingsScreen() {
                         </Settings.Item>
                         <Settings.Item
                             icon={Lock}
-                            accentTheme="green"
+                            accentTheme="blue"
                         >
                             Change Password
                         </Settings.Item>

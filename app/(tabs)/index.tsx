@@ -5,7 +5,7 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 
 export default function TabOneScreen() {
   return (
-    <SafeAreaView style={{ flex: 1 }} edges={['bottom', 'left', 'right']}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: 'transparent' }} edges={['bottom', 'left', 'right']}>
       <YStack flex={1} ai="center" jc="center" gap="$8" px="$10" pt="$5" bg="$background">
         <H2>Tamagui + Expo</H2>
 

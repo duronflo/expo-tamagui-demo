@@ -6,8 +6,8 @@ import { SafeAreaView } from 'react-native-safe-area-context'
 export default function TabThreeScreen() {
   const colorScheme = useColorScheme();
   return (
-    <SafeAreaView style={{ flex: 1 }} edges={['bottom', 'left', 'right']}>
-      <ScrollView style={{ flex: 1 }}>
+    <SafeAreaView style={{ flex: 1, backgroundColor: 'transparent' }} edges={['bottom', 'left', 'right']}>
+      <ScrollView style={{ flex: 1 }} contentContainerStyle={{ flexGrow: 1 }}>
         <YStack flex={1} jc="center" ai="center" gap="$4" bg="$background">
           <H1 textTransform='uppercase'>Fonts</H1>
           <Theme name="brown">
