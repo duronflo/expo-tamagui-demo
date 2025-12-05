@@ -10,8 +10,8 @@ export default function TabFourScreen() {
   const theme = useTheme();
   const colorScheme = useColorScheme();
   return (
-        <SafeAreaView style={{ flex: 1 }} edges={['bottom', 'left', 'right']}>
-    <ScrollView style={{ flex: 1, backgroundColor: theme.background.val }} >
+        <SafeAreaView style={{ flex: 1, backgroundColor: 'transparent' }} edges={['bottom', 'left', 'right']}>
+    <ScrollView style={{ flex: 1 }} contentContainerStyle={{ flexGrow: 1 }}>
       <YStack flex={1} m="$4" jc="center" ai="center" gap="$4" bg="$background">
         <Theme name="brown">
           <Button onPress={() => Appearance.setColorScheme(colorScheme === 'dark' ? 'light' : 'dark')}> Toggle Darkmode</Button>
