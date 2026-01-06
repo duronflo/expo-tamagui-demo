@@ -2,14 +2,14 @@
   "name": "mymonjiapp",
   "main": "expo-router/entry",
   "version": "1.0.0",
-  "packageManager": "yarn@4.5.0",
+  "packageManager": "bun@1.1.38",
   "private": true,
   "workspaces": [
     "packages/*"
   ],
   "scripts": {
-    "upgrade:tamagui": "yarn up '*tamagui*'@latest '@tamagui/*'@latest",
-    "upgrade:tamagui:canary": "yarn up '*tamagui*'@canary '@tamagui/*'@canary",
+    "upgrade:tamagui": "bun update '*tamagui*'@latest '@tamagui/*'@latest",
+    "upgrade:tamagui:canary": "bun update '*tamagui*'@canary '@tamagui/*'@canary",
     "check:tamagui": "tamagui check",
     "clean:watchman": "watchman watch-del-all && watchman shutdown-server",
     "start": "expo start -c",
@@ -21,7 +21,7 @@
   "jest": {
     "preset": "jest-expo"
   },
-  "resolutions": {
+  "overrides": {
     "metro": "^0.82.0",
     "metro-config": "^0.82.0",
     "metro-resolver": "^0.82.0"

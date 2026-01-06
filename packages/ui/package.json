@@ -25,7 +25,7 @@
     "lint:fix": "eslint ./src --fix",
     "generate-theme": "tamagui generate-themes ./src/themes/theme.ts ./src/themes/theme-generated.ts",
     "check:type": "tsc --outDir /tmp",
-    "check:type:watch": "yarn check:type -w",
+    "check:type:watch": "bun run check:type -w",
     "check-circular-deps": "../../scripts/check-circular-deps.sh ./src/index.tsx"
   },
   "devDependencies": {

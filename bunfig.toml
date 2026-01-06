@@ -1,0 +1,20 @@
+# Bun configuration for expo-tamagui-demo
+
+[install]
+# Use hardlinks to save disk space
+registry = "https://registry.npmjs.org/"
+
+# Enable caching for faster installs
+cache = true
+
+# Optimize for monorepo workspaces
+exact = false
+
+# Prod install settings
+production = false
+
+# Lockfile configuration
+frozenLockfile = false
+
+[install.scopes]
+# Package scopes can be configured here if needed
