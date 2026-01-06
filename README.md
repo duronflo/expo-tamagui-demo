@@ -58,37 +58,50 @@ Beautiful step-by-step introduction to the app features.
 - **[Expo Router](https://expo.github.io/router/)** - File-based routing for React Native apps
 - **[TypeScript](https://www.typescriptlang.org/)** - Type safety and better development experience
 - **[React Native](https://reactnative.dev/)** - Cross-platform mobile development
-- **[Yarn Workspaces](https://yarnpkg.com/features/workspaces)** - Monorepo package management
+- **[Bun](https://bun.sh/)** - Ultra-fast JavaScript runtime and package manager
 
 ## 📋 Prerequisites
 
-- Node.js 18+ 
-- Yarn 4.5.0+
+- Bun 1.1.38+ (replaces Node.js and Yarn)
 - Expo CLI
 - iOS Simulator (for iOS development)
 - Android Studio & Emulator (for Android development)
 
 ## 🚀 Getting Started
 
-### 1. Clone the repository
+### 1. Install Bun
+
+If you don't have Bun installed:
+```bash
+curl -fsSL https://bun.sh/install | bash
+```
+
+Or with npm:
+```bash
+npm install -g bun
+```
+
+### 2. Clone the repository
 ```bash
 git clone <repository-url>
 cd expo-tamagui-demo
 ```
 
-### 2. Install dependencies
+### 3. Install dependencies
 ```bash
-yarn install
+bun install
 ```
 
-### 3. Start the development server
+### 4. Start the development server
 ```bash
 # Start with cache clearing
-yarn start
+bun start
 ```
 
-### 4. Open the app
+### 5. Open the app
 - **Mobile**: Scan QR code with Expo Go app or use simulator
+
+> **Note**: For detailed information about using Bun, see [BUN_MIGRATION.md](./BUN_MIGRATION.md)
 
 ## 📁 Project Structure
 
@@ -122,11 +135,22 @@ Add custom components to `packages/ui/src/`
 
 ## 🔧 Development Notes
 
+### Package Manager
+This project uses **Bun** as the package manager. Bun is significantly faster than npm or Yarn and provides a better developer experience.
+
+**Benefits of Bun:**
+- ⚡ 2-10x faster installations
+- 💾 Disk space efficient (uses hardlinks)
+- 🔋 All-in-one toolkit (package manager, bundler, test runner)
+- 🎯 Drop-in replacement for Node.js
+
+For detailed Bun documentation and migration information, see [BUN_MIGRATION.md](./BUN_MIGRATION.md).
+
 ### Metro Configuration
 The app includes specific Metro configuration for proper monorepo support:
 
 ```json
-"resolutions": {
+"overrides": {
   "metro": "^0.82.0",
   "metro-config": "^0.82.0", 
   "metro-resolver": "^0.82.0"
@@ -135,12 +159,23 @@ The app includes specific Metro configuration for proper monorepo support:
 
 ## 🧪 Available Scripts
 
-- `yarn start` - Start Expo development server
-- `yarn web` - Start web development server
-- `yarn ios` - Run on iOS simulator
-- `yarn android` - Run on Android emulator
-- `yarn upgrade:tamagui` - Update all Tamagui packages
-- `yarn check:tamagui` - Check Tamagui configuration
+- `bun start` - Start Expo development server
+- `bun web` - Start web development server  
+- `bun ios` - Run on iOS simulator
+- `bun android` - Run on Android emulator
+- `bun upgrade:tamagui` - Update all Tamagui packages
+- `bun check:tamagui` - Check Tamagui configuration
+
+### Bun vs Yarn Commands
+
+| Task | Old (Yarn) | New (Bun) |
+|------|-----------|----------|
+| Install | `yarn install` | `bun install` |
+| Add package | `yarn add <pkg>` | `bun add <pkg>` |
+| Run script | `yarn start` | `bun start` |
+| Update | `yarn up <pkg>` | `bun update <pkg>` |
+
+For a complete command reference, see [BUN_MIGRATION.md](./BUN_MIGRATION.md).
 
 ## 📚 Learn More
 
